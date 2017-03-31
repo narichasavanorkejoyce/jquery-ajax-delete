@@ -1,7 +1,9 @@
 'use strict'
 
 const onSuccess = function (data) {
-  if (data.book) {
+  if (!data) {
+    console.warn('You deleted a book!')
+  } else if (data.book) {
     console.log(data.book)
   } else {
     console.table(data.books)

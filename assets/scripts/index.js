@@ -19,5 +19,5 @@ const bookEvents = require('./books/events')
 $(() => {
   $('#books-search').on('submit', bookEvents.onGetBooks)
   $('#book-search').on('submit', bookEvents.onGetBook)
+  $('#delete-book').on('submit', bookEvents.onDeleteBook)
 })
-
